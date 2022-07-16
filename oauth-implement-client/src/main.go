@@ -41,7 +41,7 @@ func GenerateJWTToken() (string, error) {
 
 func handleRequests() {
 	http.HandleFunc("/", HomePage)
-	
+
 	log.Fatal(http.ListenAndServe(":9001", nil))
 }
 
