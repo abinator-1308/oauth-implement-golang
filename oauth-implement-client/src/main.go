@@ -9,7 +9,7 @@ import (
 )
 
 // Should be picked from env variables or config
-var mySignedKey = []byte("sampleSignedKey")
+var mySignedKey = []byte("dummySignedKey")
 
 func HomePage(w http.ResponseWriter, r *http.Request) {
 	validToken, err := GenerateJWTToken()
